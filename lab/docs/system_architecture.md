@@ -1,6 +1,6 @@
 # System Architecture — Lab Day 09
 
-**Nhóm:** Nhóm 1  
+**Nhóm:** Nhóm Nguyễn Trương Công Nhị và Phạm Hoàng Long 
 **Ngày:** 14/04/2026  
 **Version:** 1.0
 

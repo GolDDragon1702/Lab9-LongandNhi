@@ -1,6 +1,6 @@
 # Single Agent vs Multi-Agent Comparison — Lab Day 09
 
-**Nhóm:** Nhóm 1  
+**Nhóm:** Nhóm Nguyễn Trương Công Nhị và Phạm Hoàng Long
 **Ngày:** 14/04/2026
 
 > **Hướng dẫn:** So sánh Day 08 (single-agent RAG) với Day 09 (supervisor-worker).

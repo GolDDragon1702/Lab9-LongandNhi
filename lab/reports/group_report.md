@@ -1,13 +1,13 @@
 # Báo Cáo Nhóm — Lab Day 09: Multi-Agent Orchestration
 
-**Tên nhóm:** Nhóm 1  
+**Tên nhóm:** Nhóm Nguyễn Trương Công Nhị và Phạm Hoàng Long 
 **Thành viên:**
-| Tên | Vai trò | Email |
-|-----|---------|-------|
-| Shine | Supervisor Owner | shine@company.internal |
-| Shine | Worker Owner | shine@company.internal |
-| Shine | MCP Owner | shine@company.internal |
-| Shine | Trace & Docs Owner | shine@company.internal |
+| Tên                    | Vai trò            | Email                 |
+| ---------------------- | ------------------ | --------------------- |
+| Nguyễn Trương Công Nhị | Supervisor Owner   | congnhi2004@gmail.com |
+| Phạm Hoàng Long        | Worker Owner       | plongzoro@gmail.com   |
+| Phạm Hoàng Long        | MCP Owner          | plongzoro@gmail.com   |
+| Nguyễn Trương Công Nhị | Trace & Docs Owner | congnhi2004@gmail.com |
 
 **Ngày nộp:** 14/04/2026  
 **Repo:** day09/lab  
