@@ -1,0 +1,78 @@
+{
+  "task": "Escalation trong sự cố P1 diễn ra như thế nào?",
+  "route_reason": "The task is asking for information on how P1 incident escalation works, which falls under standard queries and general knowledge base search.",
+  "risk_high": true,
+  "needs_tool": false,
+  "hitl_triggered": false,
+  "retrieved_chunks": [
+    {
+      "text": "Escalation chỉ áp dụng khi cần thay đổi quyền hệ thống ngoài quy trình thông thường.\nVí dụ: Khẩn cấp trong sự cố P1, cần cấp quyền tạm thời để fix incident.\n\nQuy trình escalation khẩn cấp:\n1. On-call IT Admin có thể cấp quyền tạm thời (max 24 giờ) sau khi được Tech Lead phê duyệt bằng lời.\n2. Sau 24 giờ, phải có ticket chính thức hoặc quyền bị thu hồi tự động.\n3. Mọi quyền tạm thời phải được ghi log vào hệ thống Security Audit.",
+      "source": "it/access-control-sop.md",
+      "score": 0.718,
+      "metadata": {
+        "effective_date": "2026-01-01",
+        "department": "IT Security",
+        "section": "Section 4: Escalation khi cần thay đổi quyền hệ thống",
+        "source": "it/access-control-sop.md",
+        "path": "/home/shine/Documents/code/program/VinUni/git/day9/Lecture-Day-08-09-10/day09/lab/data/docs/access_control_sop.txt",
+        "doc_id": "access_control_sop",
+        "access": "internal"
+      }
+    },
+    {
+      "text": "P1 — CRITICAL (Khẩn cấp):\nĐịnh nghĩa: Sự cố ảnh hưởng toàn bộ hệ thống production, không có workaround.\nVí dụ: Database sập, API gateway down, toàn bộ người dùng không thể đăng nhập.\n\nP2 — HIGH (Nghiêm trọng):\nĐịnh nghĩa: Sự cố ảnh hưởng một phần hệ thống, có workaround tạm thời.\nVí dụ: Một số tính năng không hoạt động, ảnh hưởng một nhóm người dùng.\n\nP3 — MEDIUM (Trung bình):\nĐịnh nghĩa: Lỗi ảnh hưởng không đáng kể, người dùng vẫn làm việc được.\n\nP4 — LOW (Thấp):\nĐịnh nghĩa: Yêu cầu cải tiến, gợi ý, hoặc lỗi giao diện nhỏ.",
+      "source": "support/sla-p1-2026.pdf",
+      "score": 0.6641,
+      "metadata": {
+        "source": "support/sla-p1-2026.pdf",
+        "doc_id": "sla_p1_2026",
+        "department": "IT",
+        "effective_date": "2026-01-15",
+        "path": "/home/shine/Documents/code/program/VinUni/git/day9/Lecture-Day-08-09-10/day09/lab/data/docs/sla_p1_2026.txt",
+        "access": "internal",
+        "section": "Phần 1: Định nghĩa mức độ ưu tiên"
+      }
+    },
+    {
+      "text": "v2026.1 (2026-01-15): Cập nhật SLA P1 resolution từ 6 giờ xuống 4 giờ.\nv2025.3 (2025-09-01): Thêm quy trình escalation tự động.\nv2025.1 (2025-03-01): Phiên bản đầu tiên.",
+      "source": "support/sla-p1-2026.pdf",
+      "score": 0.6555,
+      "metadata": {
+        "path": "/home/shine/Documents/code/program/VinUni/git/day9/Lecture-Day-08-09-10/day09/lab/data/docs/sla_p1_2026.txt",
+        "effective_date": "2026-01-15",
+        "doc_id": "sla_p1_2026",
+        "source": "support/sla-p1-2026.pdf",
+        "department": "IT",
+        "access": "internal",
+        "section": "Phần 5: Lịch sử phiên bản"
+      }
+    }
+  ],
+  "retrieved_sources": [
+    "it/access-control-sop.md",
+    "support/sla-p1-2026.pdf"
+  ],
+  "policy_result": {},
+  "mcp_tools_used": [],
+  "final_answer": "Quy trình escalation trong sự cố P1 diễn ra như sau:\n\n1. **Cấp quyền tạm thời**: On-call IT Admin có thể cấp quyền tạm thời (tối đa 24 giờ) sau khi được Tech Lead phê duyệt bằng lời. \n2. **Thời gian hiệu lực**: Sau 24 giờ, phải có ticket chính thức hoặc quyền sẽ bị thu hồi tự động.\n3. **Ghi log**: Tất cả quyền tạm thời phải được ghi log vào hệ thống Security Audit [1]. \n\nSự cố P1 được định nghĩa là sự cố ảnh hưởng toàn bộ hệ thống production mà không có workaround [2].",
+  "sources": [
+    "it/access-control-sop.md",
+    "support/sla-p1-2026.pdf"
+  ],
+  "confidence": 0.68,
+  "history": [
+    "[supervisor] received task: Escalation trong sự cố P1 diễn ra như thế nào?",
+    "[supervisor] route=retrieval_worker reason=The task is asking for information on how P1 incident escalation works, which falls under standard queries and general knowledge base search.",
+    "[retrieval_worker] retrieved 3 chunks from ['it/access-control-sop.md', 'support/sla-p1-2026.pdf']",
+    "[synthesis_worker] answer generated, confidence=0.68, sources=['it/access-control-sop.md', 'support/sla-p1-2026.pdf']",
+    "[graph] completed in 4485ms"
+  ],
+  "workers_called": [
+    "retrieval_worker",
+    "synthesis_worker"
+  ],
+  "supervisor_route": "retrieval_worker",
+  "latency_ms": 4485,
+  "run_id": "run_20260414_164244",
+  "question_id": "q06"
+}

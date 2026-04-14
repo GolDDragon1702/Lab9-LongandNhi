@@ -1,0 +1,78 @@
+{
+  "task": "Nhân viên vừa vào thử việc (trong probation period) muốn làm remote vì lý do cá nhân. Điều kiện là gì?",
+  "route_reason": "The task involves a standard query about remote work conditions for a new employee during their probation period, which can be addressed using general knowledge or company policies.",
+  "risk_high": false,
+  "needs_tool": false,
+  "hitl_triggered": false,
+  "retrieved_chunks": [
+    {
+      "text": "4.1 Điều kiện remote:\n- Nhân viên sau probation period có thể làm remote tối đa 2 ngày/tuần.\n- Team Lead phải phê duyệt lịch remote qua HR Portal.\n- Ngày onsite bắt buộc: Thứ 3 và Thứ 5 theo lịch team.\n\n4.2 Yêu cầu kỹ thuật khi remote:\n- Kết nối VPN bắt buộc khi làm việc với hệ thống nội bộ.\n- Camera bật trong các cuộc họp team.",
+      "source": "hr/leave-policy-2026.pdf",
+      "score": 0.7499,
+      "metadata": {
+        "path": "/home/shine/Documents/code/program/VinUni/git/day9/Lecture-Day-08-09-10/day09/lab/data/docs/hr_leave_policy.txt",
+        "source": "hr/leave-policy-2026.pdf",
+        "doc_id": "hr_leave_policy",
+        "effective_date": "2026-01-01",
+        "department": "HR",
+        "access": "internal",
+        "section": "Phần 4: Remote work policy"
+      }
+    },
+    {
+      "text": "Quyền phải được thu hồi trong các trường hợp:\n- Nhân viên nghỉ việc: Thu hồi ngay trong ngày cuối.\n- Hết hạn contract: Thu hồi đúng ngày hết hạn.\n- Chuyển bộ phận: Điều chỉnh trong 3 ngày làm việc.",
+      "source": "it/access-control-sop.md",
+      "score": 0.6054,
+      "metadata": {
+        "effective_date": "2026-01-01",
+        "department": "IT Security",
+        "section": "Section 5: Thu hồi quyền truy cập",
+        "doc_id": "access_control_sop",
+        "access": "internal",
+        "source": "it/access-control-sop.md",
+        "path": "/home/shine/Documents/code/program/VinUni/git/day9/Lecture-Day-08-09-10/day09/lab/data/docs/access_control_sop.txt"
+      }
+    },
+    {
+      "text": "3.1 Điều kiện làm thêm:\nLàm thêm giờ phải được Line Manager phê duyệt trước bằng văn bản.\n\n3.2 Hệ số lương làm thêm:\n- Ngày thường: 150% lương giờ tiêu chuẩn.\n- Ngày cuối tuần: 200% lương giờ tiêu chuẩn.\n- Ngày lễ: 300% lương giờ tiêu chuẩn.",
+      "source": "hr/leave-policy-2026.pdf",
+      "score": 0.5767,
+      "metadata": {
+        "department": "HR",
+        "access": "internal",
+        "doc_id": "hr_leave_policy",
+        "path": "/home/shine/Documents/code/program/VinUni/git/day9/Lecture-Day-08-09-10/day09/lab/data/docs/hr_leave_policy.txt",
+        "section": "Phần 3: Chính sách làm thêm giờ",
+        "source": "hr/leave-policy-2026.pdf",
+        "effective_date": "2026-01-01"
+      }
+    }
+  ],
+  "retrieved_sources": [
+    "hr/leave-policy-2026.pdf",
+    "it/access-control-sop.md"
+  ],
+  "policy_result": {},
+  "mcp_tools_used": [],
+  "final_answer": "Nhân viên trong probation period không đủ điều kiện để làm remote. Theo tài liệu, chỉ nhân viên sau probation period mới có thể làm remote tối đa 2 ngày/tuần và cần sự phê duyệt của Team Lead qua HR Portal [1].",
+  "sources": [
+    "hr/leave-policy-2026.pdf",
+    "it/access-control-sop.md"
+  ],
+  "confidence": 0.64,
+  "history": [
+    "[supervisor] received task: Nhân viên vừa vào thử việc (trong probation period) muốn làm remote vì lý do cá ",
+    "[supervisor] route=retrieval_worker reason=The task involves a standard query about remote work conditions for a new employee during their probation period, which can be addressed using general knowledge or company policies.",
+    "[retrieval_worker] retrieved 3 chunks from ['hr/leave-policy-2026.pdf', 'it/access-control-sop.md']",
+    "[synthesis_worker] answer generated, confidence=0.64, sources=['hr/leave-policy-2026.pdf', 'it/access-control-sop.md']",
+    "[graph] completed in 4034ms"
+  ],
+  "workers_called": [
+    "retrieval_worker",
+    "synthesis_worker"
+  ],
+  "supervisor_route": "retrieval_worker",
+  "latency_ms": 4034,
+  "run_id": "run_20260414_163505",
+  "question_id": "q14"
+}
